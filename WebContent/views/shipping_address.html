@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>iCard-Shipping address</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- use google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/basic.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/shipping_address.css">
+  <style>
+  #message{
+    display:none;
+    width: 100%;
+    border: 2px solid red;
+    width: 30em;
+    text-align: center;
+    padding-top:1%;
+
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- header menu bar -->
+    <div class="header-menu-container">
+      <div class="menu-item-logo">
+        <h1><a href="../index.html"><span>i</span>Card</a></h1>
+      </div>
+      <nav class="menu-item">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about_us.html">Have Fun</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="tagline">
+      <p>Customize your cards with your own words to your special one</p>
+    </div>
+  </header>
+
+  <div class="checkout-process">
+    SIGN IN &gt; <strong>SHIPPING</strong> &gt; PLACE ORDER
+  </div>
+
+  <div class="instruction">
+    <h2>Select a shipping address</h2>
+    <p>Is the address you'd like to use displayed below? If so, click the corresponding "Deliver to this address" button. Or you can enter a new shipping address. </p>
+  </div>
+
+  <div class="current-address">
+    <address>
+      Qian<br>
+      10 Persholas ST APT 10<br>
+      BOSTON, MA 02130<br>
+      United States<br>
+      Phone: 6170009999
+    </address>
+    <form action="">
+      <input type="hidden" name="address" value="old">
+      <a href="checkout.html"><button type="button">Deliver to this address</button></a>
+    </form>
+
+  </div>
+  <div >
+    <form action="#" class="container" onsubmit="showMessage()">
+      <input type="hidden" name="address" value="new">
+      <h2>Use a new address</h3>
+        <!-- delete later -->
+        <div id="message">
+
+        </div>
+      <label for="fullname">Full Name<span class="required">*</span></label>
+      <input type="text" id="fullname" name="fullname" required>
+      <label for="addressline1"></i> Address line 1<span class="required">*</span></label>
+      <input type="text" id="addressline1" name="addressline1" placeholder="Street address, P.O.box, company name, c/o">
+      <label for="addressling2"> Address line 2</label>
+      <input type="text" id="addressling2" name="addressling2" placeholder="Apartment, suite, unit, building, floor, etc.">
+      <label for="city">City<span class="required">*</span></label>
+      <input type="text" id="city" name="city">
+      <label for="tel">Phone number<span class="required">*</span></label>
+      <input type="tel" id="tel" name="phone">
+
+      <label for="state">State<span class="required">*</span></label>
+      <input type="text" id="state" name="state">
+
+      <label for="zip">Zip Code<span class="required">*</span></label>
+      <input type="text" id="zip" name="zip" pattern = "^[0-9]{5}(?:-[0-9]{4})?$">
+      <label>
+        <fieldset>
+          <legend>Select billing address</legend>
+          <input type="radio" checked="checked" name="billing_address" value="shipping_address"> Billing address same as shipping
+        </label><br>
+          <label>
+          <input type="radio" checked="checked" name="billing_address" value="personal_address"> Billing address same as your personal address
+          </label>
+        </fieldset>
+      <label>
+        <input type="checkbox" name="save"> Save this address as your new personal address
+      </label>
+
+      <!-- delete later -->
+      <button type="submit" style="background-color: orange; color:white">Validate Form</button>
+      <a href="checkout.html"><button type="button" class="use-new">Use this address and checkout</button></a>
+    </form>
+  </div>
+  <script src="../js/shipping_address.js"></script>
+</body>
+
+</html>

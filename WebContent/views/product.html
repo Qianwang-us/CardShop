@@ -1,0 +1,117 @@
+<!-- product detail page for customizing products and buy -->
+<!-- customer can buy post card design with customized text in order to buy post cards.-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>iCard-Post Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- use google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- <script src="https://use.fontawesome.com/4d2683cdc4.js"></script> -->
+  <link rel="stylesheet" href="../fonts/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="../styles/basic.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/product.css">
+  <style>
+
+    /*To show error message if custom text are blank*/
+    #message{
+      display:none;
+      width: 100%;
+      border: 2px solid red;
+      width: 30em;
+      height: 2em;
+      text-align: center;
+      padding-top:1%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- header menu bar -->
+    <div class="header-menu-container">
+      <div class="menu-item-logo">
+        <h1><a href="../index.html"><span>i</span>Card</a></h1>
+      </div>
+      <nav class="menu-item">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about_us.html">Have Fun</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="tagline">
+      <p>Customize your cards with your own words to your special one</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="product-container">
+      <div class="left-column">
+        <div class="card-img">
+          <img src="../images/chrismas_tower_sm.jpg" alt="product photo">
+        </div>
+
+        <div class="card-img text-template">
+          <div class="top">Dear XXX,</div>
+          <div class="body">Example: Merry Chrismas!</div>
+          <div class="bottom">Sincerely, ZZ</div>
+        </div>
+
+
+      </div>
+      <div class="right-column">
+        <div class="product-description">
+          <h1>Price: $ 3.99</h1>
+          <p>Name: Chrismas Tower</p>
+          <p>Provider: iCard</p>
+          <p><i class="far fa-heart"></i></p>
+
+          <!-- <div class="product-configuration">
+
+            <div class="product-theme">
+              <span>Theme</span>
+              <button>Warm</button>
+              <button>Cold</button>
+              <button>Fashion</button>
+            </div>
+          </div> -->
+          <div id="message" class="card-img">
+          </div>
+        </div>
+
+        <div class="customize">
+
+          <div class="custom-text">
+            <form action="">
+              <fieldset>
+                <legend>Words printed on your card</legend>
+                <input id="custom-top" type="text" size="50" placeholder="Dear XXX," maxlength="50">
+                <textarea id="custom-body" name="name" rows="8" cols="55" placeholder="Example: Merry Chrismas!" maxlength="280"></textarea>
+                <input id="custom-bottom" type="text" size="50" class="bottom" placeholder="Sincerely, ZZ" maxlength="50">
+              </fieldset>
+              <!-- <a href="#" class="how">How to customize your post cards</a> -->
+
+              <div class="buttons">
+                <button type = "button" class="preview-btn">Preview</button>
+                <a href="cart.html"><button type = "button" class="cart-btn">Add to cart</button></a>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../js/product.js"></script>
+</body>
+
+</html>
