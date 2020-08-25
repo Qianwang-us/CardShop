@@ -1,21 +1,30 @@
-/* basic styles */
 
-* {
-  box-sizing: border-box;
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
+
+main h2{
+  font-weight: 400;
 }
 
 .container{
   display: flex;
   flex-direction: column;
-  width: 80%;
-  margin: auto;
+  /* width: 60%; */
+  /* margin: auto; */
 }
 
-button {
+.changePage{
+  border-top: 2px solid var(--border-color);
+  padding-top: 0.2em;
+}
+
+.main-btn {
   margin: 2% 0;
+  width: 100%;
 }

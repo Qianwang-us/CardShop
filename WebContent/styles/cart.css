@@ -67,12 +67,6 @@ input[type=number]{
   position:relative;
 }
 
-/* .checkout-btn{
-  background-color:gold;
-  padding: 0.4em 0.8em;
-  border-radius: 5px;
-  border:2px solid #AAA;
-} */
 button{
   padding: 0.2em 0.8em;
 }

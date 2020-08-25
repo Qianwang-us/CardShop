@@ -1,15 +1,63 @@
 <!-- Admin and Customer can login in order to use full features such as buying or perform admin functions-->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login</title>
-    <link rel="stylesheet" href="../styles/login.css">
-  </head>
-  <body>
-    <div><a href="../index.html">iCard</a></div>
-    <h1>Sign in to your account</h1>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+
+  <!-- use google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- <script src="https://use.fontawesome.com/4d2683cdc4.js"></script> -->
+  <link rel="stylesheet" href="../fonts/fontawesome-free-5.14.0-web/css/all.css">
+  <link rel="stylesheet" href="../styles/basic.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+  <header>
+    <!-- header top -->
+    <div class="header-top-container">
+      <div class="search">
+        <form action="#">
+          <input type="search" name="search">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <div class="cart">
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+      <div class="login">
+        <a href="order_history.html">Orders</a>
+      </div>
+      <div class="login">
+        <a href="login.html">Login</a>
+      </div>
+    </div>
+    <!-- header menu bar -->
+    <div class="header-menu-container">
+      <div class="menu-item-logo">
+        <h1><a href="../index.html"><span>i</span>Card</a></h1>
+      </div>
+      <nav class="menu-item">
+        <ul>
+          <li><a href="#">Holidays</a></li>
+          <li><a href="#">Events</a></li>
+          <!-- <li><a href="#">Custom</a></li> -->
+          <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          <li><a href="views/about_us.html">About us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="tagline">
+      <p>Customize your cards with your own words to your special one</p>
+    </div>
+  </header>
+
+  <main>
+    <h2>Sign in to your account</h2>
     <form action="">
       <div class="container">
         <div>
@@ -19,15 +67,17 @@
           <label for="admin">Admin</label>
         </div>
         <label for="email">Email address</label>
-        <input type="text" id = "email">
+        <input type="text" id="email">
         <label for="password">Password</label>
-        <input type="text" id = "password">
-
-        <button>SIGN IN</button>
-        <div>New to iCard?</div>
-        <a href="register.html"><button>CREATE AN ACCOUNT</button></a>
+        <input type="text" id="password">
+        <button class="main-btn">SIGN IN</button>
       </div>
-
     </form>
-  </body>
+
+    <div class="changePage">New to iCard?</div>
+    <a href="register.html"><button type="button" class="main-btn">CREATE AN ACCOUNT</button></a>
+  </main>
+
+</body>
+
 </html>

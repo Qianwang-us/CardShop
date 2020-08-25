@@ -6,64 +6,21 @@ body {
 a {
   text-decoration: none;
 }
-
 /* Header */
 
-/* Header top */
-header {
-  border-bottom: 1px solid var(--header-border-color);
-}
-
-.header-top-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  color: var(--header-top-color);
-  border-bottom: 2px solid var(--header-border-color);
-}
-
-.search, .cart, .login{
-  margin: 0.5%;
-}
-
-.search form input{
-  outline-style: none;
-}
-
-.search-btn{
-  background-color: white;
-  color:var(--header-top-color);
-}
-
-.search-btn:hover{
-  background-color: white;
-  color:var(--header-hover-color);
-}
-
-/* .search form i:hover {
-  color:var(--header-hover-color);
-} */
-.search form input:focus{
-  border-color:var(--header-hover-color);
-}
-
-.login a {
-  font-family: var(--menu-font-family);
-}
-
-.cart a, .login a{
-  color: var(--header-top-color);
-}
-
-.cart a:hover, .login a:hover{
-  color:var(--header-hover-color);
-}
-
-.login a:hover{
-border-bottom: 2px solid var(--header-top-color);
-}
-
 /* Header menu */
+
+/*add for mini project*/
+nav.menu-item ul li:nth-child(1) {
+  flex: 1.5;
+  text-align: center;
+}
+
+nav.menu-item ul li:nth-child(2) {
+  flex: 2;
+  text-align: center;
+}
+/*end for mini project*/
 
 .header-menu-container {
   display: flex;
@@ -132,7 +89,7 @@ header .menu-item ul li a i {
     letter-spacing: 0;
     font-family: Mier-A, sans-serif;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.2;
     max-width: 100%;
     margin: 0 auto;
     padding: 0.5rem 0;

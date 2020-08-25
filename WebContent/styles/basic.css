@@ -4,9 +4,8 @@
   --header-top-color: gray;
   --header-hover-color: black;
   --logo-color:#e97807;
-  /* --logo-border-color: gray; */
+
    /* --logo-color: #568203; */
-  /* --logo-color: #ff661a; */
   --menu-color:#222;
   --main-item-color:gray;
   --tagline-bg-color: #568203B3;
@@ -45,7 +44,8 @@ button{
   font-size: 1rem;
   color: #FFFFFF;
   text-decoration: none;
-  padding: 0.8rem 1.8rem;
+  /* padding: 0.8rem 1.8rem; */
+  padding: 0.4rem 0.8rem;
   transition: all .5s;
   border-style:none;
   outline:none;

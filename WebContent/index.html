@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iCard mini Home</title>
+  <title>iCard Home</title>
 
   <!-- use google font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -19,6 +19,24 @@
 
 <body>
   <header>
+    <!-- header top -->
+    <div class="header-top-container">
+      <div class="search">
+        <form action="#">
+          <input type="search" name="search">
+          <button class="search-btn"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+      <div class="cart">
+        <a href="views/cart.html"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+      <div class="login">
+        <a href="views/order_history.html">Orders</a>
+      </div>
+      <div class="login">
+        <a href="views/login.html">Login</a>
+      </div>
+    </div>
     <!-- header menu bar -->
     <div class="header-menu-container">
       <div class="menu-item-logo">
@@ -26,15 +44,19 @@
       </div>
       <nav class="menu-item">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="views/about_us.html">Have Fun</a></li>
+          <li><a href="#">Holidays</a></li>
+          <li><a href="#">Events</a></li>
+          <!-- <li><a href="#">Custom</a></li> -->
+          <li><a href="#"><i class="fas fa-heart"></i></a></li>
+          <li><a href="views/about_us.html">About us</a></li>
         </ul>
       </nav>
     </div>
     <div class="tagline">
-      <p>Customize your cards with your own words to your special one</p>
+<p>Customize your cards with your own words to your special one</p>
     </div>
   </header>
+
   <main>
     <!-- main sort options -->
     <form action="#">
