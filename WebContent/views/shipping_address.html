@@ -7,32 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- use google font -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../fonts/fontawesome-free-5.14.0-web/css/all.css">
   <link rel="stylesheet" href="../styles/basic.css">
   <link rel="stylesheet" href="../styles/header.css">
   <link rel="stylesheet" href="../styles/shipping_address.css">
-  <style>
-  #message{
-    display:none;
-    width: 100%;
-    border: 2px solid red;
-    width: 30em;
-    text-align: center;
-    padding-top:1%;
 
-  }
-  </style>
 </head>
 
 <body>
   <header>
     <!-- header top -->
     <div class="header-top-container">
-      <div class="search">
-        <form action="#">
-          <input type="search" name="search">
-          <button class="search-btn"><i class="fas fa-search"></i></button>
-        </form>
-      </div>
       <div class="cart">
         <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
       </div>
@@ -87,13 +72,10 @@
 
   </div>
   <div >
-    <form action="#" class="container" onsubmit="showMessage()">
+    <form action="#" class="container">
       <input type="hidden" name="address" value="new">
       <h2>Use a new address</h3>
-        <!-- delete later -->
-        <div id="message">
 
-        </div>
       <label for="fullname">Full Name<span class="required">*</span></label>
       <input type="text" id="fullname" name="fullname" required>
       <label for="addressline1"></i> Address line 1<span class="required">*</span></label>
@@ -124,7 +106,7 @@
       </label>
 
       <!-- delete later -->
-      <button type="submit" style="background-color: orange; color:white">Validate Form</button>
+      <!-- <button type="submit" style="background-color: orange; color:white">Validate Form</button> -->
       <a href="checkout.html"><button type="button" class="use-new">Use this address and checkout</button></a>
     </form>
   </div>

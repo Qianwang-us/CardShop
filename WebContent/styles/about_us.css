@@ -45,7 +45,7 @@ button:hover{
 }
 
 
-i {
+i.fa-smile-wink {
   color:var(--logo-color);
   font-size: 2em;
   position:absolute;

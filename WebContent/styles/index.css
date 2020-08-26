@@ -1,13 +1,6 @@
 
 
 
-img {
-  width: 18em;
-  max-width: 100%;
-  height: auto;
-}
-
-
 /* main */
 main {
   font-family: var(--menu-font-family);
@@ -41,8 +34,17 @@ main form {
 
 
 .item-img {
+  width: 18em;
+  height: 12em;
   padding: 1%;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .subitem-container ul li {
   font-family: var(--main-font-family);

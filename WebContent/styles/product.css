@@ -93,6 +93,17 @@
   color:var(--favoriate-hover-color);
 }
 
+/*To show error message if custom text are blank*/
+#message{
+  display:none;
+  border: 2px solid var(--favoriate-hover-color);
+  width: 33em;
+  height: 2em;
+  text-align: center;
+  padding-top:1%;
+
+}
+
 .custom-text{
   margin-bottom: 1.5em;
 }

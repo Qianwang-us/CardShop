@@ -1,33 +1,75 @@
-<!-- customer can view order history/track order status and
-can cancel order which is not processed yet in order to track orders -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
-    <title>Order History</title>
+    <title>iCard-Order History</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- use google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="../styles/basic.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/order_history.css">
+    <style>
+    </style>
   </head>
   <body>
-    <div class="logo"><a href="../index.html">iCard</a></div>
-    <table>
-      <caption>Recent Order</caption>
-      <tr>
-        <td>Order Date</td>
-        <td>Order Number</td>
-        <td>Status</td>
-        <td>Tracking Details</td>
-      </tr>
-      <tr>
-        <td>Aug 11, 2020</td>
-        <td>A12345678</td>
-        <td>Shipped</td>
-        <td><a href="order_detail.html">View Details</a></td>
-      </tr>
-      <tr>
-        <td>Aug 20, 2020</td>
-        <td>A12345679</td>
-        <td>Shipped</td>
-        <td><a href="order_detail.html">View Details</a></td>
-      </tr>
-    </table>
+    <header>
+      <!-- header top -->
+      <div class="header-top-container">
+        <div class="cart">
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <div class="login">
+          <a href="order_history.html">Orders</a>
+        </div>
+        <div class="login">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+      <!-- header menu bar -->
+      <div class="header-menu-container">
+        <div class="menu-item-logo">
+          <h1><a href="../index.html"><span>i</span>Card</a></h1>
+        </div>
+        <nav class="menu-item">
+          <ul>
+            <li><a href="#">Holidays</a></li>
+            <li><a href="#">Events</a></li>
+            <!-- <li><a href="#">Custom</a></li> -->
+            <li><a href="#"><i class="fas fa-heart"></i></a></li>
+            <li><a href="views/about_us.html">About us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="tagline">
+        <p>Customize your cards with your own words to your special one</p>
+      </div>
+    </header>
+    <main>
+      <table id="order">
+        <caption>Recent Orders</caption>
+        <tr>
+          <th>Order Date</th>
+          <th>Order Number</th>
+          <th>Status</th>
+          <th>Tracking Details</th>
+        </tr>
+        <tr>
+          <td>Aug 11, 2020</td>
+          <td>A12345678</td>
+          <td>Shipped</td>
+          <td><a href="order_detail.html">View Details</a></td>
+        </tr>
+        <tr>
+          <td>Aug 20, 2020</td>
+          <td>A12345679</td>
+          <td>Shipped</td>
+          <td><a href="order_detail.html">View Details</a></td>
+        </tr>
+      </table>
+    </main>
+
   </body>
 </html>

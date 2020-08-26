@@ -22,29 +22,8 @@ header {
   border-bottom: 2px solid var(--header-border-color);
 }
 
-.search, .cart, .login{
-  margin: 0.5%;
-}
-
-.search form input{
-  outline-style: none;
-}
-
-.search-btn{
-  background-color: white;
-  color:var(--header-top-color);
-}
-
-.search-btn:hover{
-  background-color: white;
-  color:var(--header-hover-color);
-}
-
-/* .search form i:hover {
-  color:var(--header-hover-color);
-} */
-.search form input:focus{
-  border-color:var(--header-hover-color);
+.cart, .login{
+  margin: 1%;
 }
 
 .login a {
