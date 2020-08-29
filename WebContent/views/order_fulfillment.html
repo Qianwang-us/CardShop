@@ -20,12 +20,6 @@
   <header>
     <!-- header top -->
     <div class="header-top-container">
-      <div class="cart">
-        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
-      </div>
-      <div class="login">
-        <a href="order_history.html">Orders</a>
-      </div>
       <div class="login">
         <a href="login.html">Login</a>
       </div>
@@ -37,33 +31,29 @@
       </div>
       <nav class="menu-item">
         <ul>
-          <li><a href="#">Holidays</a></li>
-          <li><a href="#">Events</a></li>
-          <!-- <li><a href="#">Custom</a></li> -->
-          <li><a href="#"><i class="fas fa-heart"></i></a></li>
-          <li><a href="views/about_us.html">About us</a></li>
+          <li><a href="order_fulfillment.html">Admin&nbsp;Portal</a></li>
+
+          <li><a href="about_us.html">About&nbsp;us</a></li>
         </ul>
       </nav>
     </div>
-    <div class="tagline">
-      <p>Customize your cards with your own words to your special one</p>
-    </div>
   </header>
   <main>
-    <div>
-      Filtered by order status(limit 30)
-      <ul>
-        <li>Created</li>
-        <li>In Process</li>
-        <li>Shipped</li>
-        <li>Completed</li>
-        <li>Cancelled</li>
-      </ul>
-    </div>
+    <form action="">
+      <label for="order_status">Filtered by order status:</label>
+      <select name="order_status" id="order_status">
+        <option value="created">Created</option>
+        <option value="in_process">In Process</option>
+        <option value="shipped">Shipped</option>
+        <option value="completed">Completed</option>
+        <option value="cancelled">Cancelled</option>
+      </select>
+    </form>
+
     <form action="">
       <table class="order-list">
         <tr class="order-item">
-          <td colspan = "7">
+          <td colspan="8">
           </td>
 
           <td>
@@ -72,11 +62,12 @@
         </tr>
         <tr>
           <th>Selected</th>
-          <th>Order_id</th>
-          <th>Product_id</th>
+          <th>Order ID</th>
+          <th>Order Date</th>
+          <th>Product ID</th>
           <th>Quantity</th>
-          <th>Custom_text</th>
-          <th>Shipping_address</th>
+          <th>Custom Text</th>
+          <th>Shipping Address</th>
           <th>Status</th>
           <th>Next Step</th>
         </tr>
@@ -87,6 +78,7 @@
             <input type="checkbox" name="order_item" value="order_id,product_id">
           </td>
           <td>A1000001</td>
+          <td>2020-08-10</td>
           <td>P1000001</td>
           <td>1</td>
           <td>
@@ -117,6 +109,7 @@
             <input type="checkbox" name="order_item" value="order_id,product_id">
           </td>
           <td>A1000002</td>
+          <td>2020-08-11</td>
           <td>P1000002</td>
           <td>1</td>
           <td>
@@ -147,6 +140,7 @@
             <input type="checkbox" name="order_item" value="order_id,product_id">
           </td>
           <td>A1000003</td>
+          <td>2020-08-11</td>
           <td>P1000003</td>
           <td>1</td>
           <td>
@@ -172,7 +166,7 @@
         </tr>
 
         <tr class="order-item">
-          <td colspan = "7">
+          <td colspan="8">
           </td>
 
           <td>
