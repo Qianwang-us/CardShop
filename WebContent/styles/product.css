@@ -49,8 +49,11 @@
 
 .text-template .body{
   position: absolute;
-  top:8em;
-  left:5em;
+  top:6em;
+  left:3em;
+  right: 3em;
+  text-align: left;
+  white-space: pre-wrap;
 }
 
 .text-template .bottom{
@@ -69,7 +72,14 @@
   align-items:flex-start;
 }
 
-.product-description, .customize{
+.product-description{
+  height: 15em;
+  box-sizing: border-box;
+  margin:2%;
+  /* border: 2px solid black; */
+}
+
+.customize{
   height: 20em;
   box-sizing: border-box;
   margin:2%;
@@ -93,15 +103,48 @@
   color:var(--favoriate-hover-color);
 }
 
-/*To show error message if custom text are blank*/
-#message{
-  display:none;
-  border: 2px solid var(--favoriate-hover-color);
-  width: 33em;
-  height: 2em;
-  text-align: center;
-  padding-top:1%;
+.custom-theme{
+  display:flex;
+  flex-direction: row;
+}
 
+/* table.custom-theme{
+  text-align: left;
+  width:100%;
+  table-layout: auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.custom-theme td{
+  white-space: nowrap;
+  overflow: hidden;
+  border: 1px solid black;
+} */
+
+label[for="black"]{
+  color:black;
+}
+
+label[for="blue"]{
+  color:blue;
+}
+
+label[for="purple"]{
+  color:purple;
+}
+
+/* Font choice: 'Petit Formal Script', 'Grandstander', 'Dancing Script' */
+label[for="elegant"]{
+  font-family: 'Petit Formal Script', cursive;
+}
+
+label[for="cute"]{
+  font-family: 'Grandstander', cursive;
+}
+
+label[for="lively"]{
+  font-family: 'Dancing Script', cursive;
 }
 
 .custom-text{
